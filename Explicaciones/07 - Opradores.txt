@@ -1,0 +1,21 @@
+//Operadores
+
+//Aritmeticos 
+
++ - * / // -> (división entera) ** -> (potencia)
+% -> (Modulo -> residuo de una división)
+
+
+//Relacionales 
+
+<       -> menor que
+<=      -> menor o igual que
+>       -> mayor que
+>=      -> mayor o igual que
+==      -> igualdad 
+!=      -> diferencia
+
+Nota: Todas las operaciones relacionales devuelven un 
+valor booleano (es decir, True o False)
+
+// Lógicos
