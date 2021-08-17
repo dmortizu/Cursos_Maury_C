@@ -1,0 +1,39 @@
+1. Un algoritmo siempre tiene que ser finito( es decir
+que los pasos deben terminar en algun momento)
+
+2. Indicar el inicio y el fin.
+3. Un sub paso se debe indicar con una sangría mas.
+    dadsfasdfasd
+
+Escribir un algoritmo que muestre el resultado
+de sumar 2 números.
+
+Algoritmo suma_2_numeros
+Inicio 
+
+    1. Solicitar los 2 numeros
+    2. Sumo los 2 numeros.
+    3. Mostrar el resultado.
+
+Fin
+
+Escribir un algoritmo que muestre el resultado 
+de sumar, restar, multiplicar y dividir 2 números.
+
+Algoritmo cacl_2_numeros
+Inicio
+
+    1. Pedir num1 y perdi num2
+    2. sumar num1 y num2
+    3. mostrar el resultado de la suma
+    4. resta num1 y num2
+    5. mostrar el restualdo de la resta
+    6. multiplicar num1 y num2
+    7. mostrar el restulado de la multiplicacion
+    8. si num2 es 0
+            mostrar que no se puede dividir por 0 y parar.
+        si num2 no es 0 
+            dividir num1 y num2
+            mostrar el restulado de la división.
+            
+Fin

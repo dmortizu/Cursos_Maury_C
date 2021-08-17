@@ -1,0 +1,14 @@
+//Condiciones
+Una condición es una decisión que nos plantea
+varias opciones y dependiendo de la que escojamos
+se realizaran ciertas acciones
+
+- Si Entonces - sino
+
+
+//Ciclos - bucle
+Es una estructura que nos permite
+repetir ciertas acciones varias veces.
+
+- Ciclo para
+- Ciclo mientras

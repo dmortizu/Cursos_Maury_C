@@ -1,0 +1,46 @@
+Escribir ell pseudocodigo del 
+algoritmo suma_2_numeros
+
+pseudocodigo suma_2_numeros
+Inicio
+
+    1. Solicitar 2 numeros
+    y almacenarlos en las
+    variables num1 y num2.
+    2. suma = num1 + num2
+    3. Mostrar(suma)
+
+Fin
+
+pseudocodigo suma_2_numeros2.0
+Inicio
+
+    1. num1 = Leer_dato()
+    2. num2 = Leer_dato()
+    3. suma = num1 + num2
+    4. Mostrar(suma)
+
+Fin
+
+
+Escribir el pseudocodigo
+del algoritmo cacl_2_numeros
+
+pseudocodigo cacl_2_numeros
+Inicio
+
+    1. num1 = Leer_dato()
+    2. num2 = Leer_dato()
+    3. suma = num1 + num2
+    4. Mostrar(suma)
+    5. resta = num1 - num2
+    6. Mostrar(resta)
+    7. mul = num1 * num2
+    8. Mostrar(mul)
+    9. si num2 es igual a 0
+        Mostrar_error()
+       sino
+        division = num1 / num2
+        Mostrar(division) 
+
+Fin

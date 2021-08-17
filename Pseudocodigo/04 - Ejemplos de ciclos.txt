@@ -1,0 +1,42 @@
+pseudocodigo para el ciclo "para"
+
+--Estructura
+1. le asignamos un valor inicial a una variable
+2. indicamos hasta donde queremos que llegue esa variable
+3. indicamos como va ir cambiando esa variable en cada ciclo.
+
+Para [1]; [2]; [3]
+
+--Operaciones relacionales
+< <= > >= == != -> diferencia 
+
+Inicio
+
+    Para iteracion = 1; iteracion <= 10; iteracion = iteracion + 1
+        Mostrar(iteracion)
+
+Fin
+
+
+
+pseudocodigo para el ciclo "mientras"
+--Estructura
+1. le asignamos un valor inicial a una variable
+2. indicamos hasta donde queremos que llegue esa variable
+3. indicamos como va ir cambiando esa variable en cada ciclo.
+
+la variable con su valor inicial
+Mientras condicion
+    instrucciones
+    cambio de la variable
+
+
+Inicio
+
+    iteracion = 1
+    Mientras iteracion <= 10
+        Mostrar(iteracio)
+
+        iteracio = iteracio + 1
+
+Fin

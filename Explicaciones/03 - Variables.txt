@@ -1,0 +1,12 @@
+Una variable es un nombre en el
+que nosotros vamos a 
+almacenar un dato.
+
+Ejemplos
+
+nombre = "Elian" 
+edad = 24
+
+num1 = 10
+num2 = 20
+
