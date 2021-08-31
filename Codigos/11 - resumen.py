@@ -35,10 +35,27 @@ from datetime import datetime
 
 cuentas = {}
 
+#Ejemplo de diccionario
+# dict1 = {
+#     'llave1': {
+#         'nombre': "Elian"
+#     },
+#     'llave2': {
+#         'nombre': "Adolfo"
+#     }
+# }
+
+# print(dict1)
+# print(dict1['llave1'])
+# print(dict1['llave2'])
+# print(dict1['llave1']['nombre'])    #Elian
+# print(dict1['llave2']['nombre'])    #Adolfo
+
 # Variables globales
 
 nombre_cliente = ""
 saldo_inicial = 0
+flag = True
 
 
 
@@ -113,7 +130,51 @@ while (True):
                 print(f"\nLa opción: {tipo_cuenta} no es valida. Por favor ingrese una opción entre [1-3]")
 
     elif (opcion_principal == 2):
-        print("\nMenu Cajero Automático")
+        print("\nCajero Automático")
+        
+        contador = 0
+        flag = True
+
+        while (True and flag):
+            num_cuenta = input("\nIngrese el número de cuenta por favor: ")
+
+            if (cuentas.get(num_cuenta) == None):
+                print(f"\nEl número de cuenta no existe: {num_cuenta}")
+                contador += 1
+
+                if (contador == 3):
+                    break
+                
+                continue
+
+            nombre = cuentas[num_cuenta]["nombre"]
+            saldo_inicial = cuentas[num_cuenta]["saldo"]
+
+            print(f"\nBienvenido {nombre}")
+
+            while(True):
+                print("\nMenu Cajero Automático\n")
+                print("1. Consultar Saldo\n2. Trasnferencias\n3. Retiros\n4. Depositos\n5. Volver al menu principal")
+                try:
+                    opcion_cajero = int(input("\nPor favor seleccione una opción: "))
+                except:
+                    print("\nLo opción no es un número.")
+                    continue
+
+                if (opcion_cajero == 1):
+                    pass
+                elif (opcion_cajero == 2):
+                    pass
+                elif (opcion_cajero == 3):
+                    pass
+                elif (opcion_cajero == 4):
+                    pass
+                elif (opcion_cajero == 5):
+                    flag = False
+                    break
+                else: 
+                    print(f"\nLa opción: {opcion_cajero} no es valida, por favor ingresar una opción del [1-5]")
+
 
     elif (opcion_principal == 3):
         print("\nVuelva pronto :)")
