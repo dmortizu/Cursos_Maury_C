@@ -35,7 +35,23 @@ from datetime import datetime
 #Estructuras
 #() [] {} -> {}
 
-cuentas = {}
+##Cuentas por defecto 
+    #1 de Ahorro
+    #1 Monetaria
+cuentas = {
+    '2021-09-03Az': {
+        'num_cuenta': '2021-09-03Al',
+        'nombre': 'Alberto Lopez',
+        'saldo': 5250,
+        'tipo_cuenta': 1
+    },
+    '2021-09-03En': {
+        'num_cuenta': '2021-09-03En',
+        'nombre': 'Esteban',
+        'saldo': 13250,
+        'tipo_cuenta': 2
+    }
+}
 
 #Ejemplo de diccionario
 # dict1 = {
@@ -170,6 +186,7 @@ while (True):
 
                 elif (opcion_cajero == 2):
                     pass
+                    #aqui es donde deben programar lo que se pide
 
                 elif (opcion_cajero == 3):
                     print("\nRETIRO DE DINERO")
