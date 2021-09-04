@@ -16,7 +16,7 @@
     #ahorro <= 2500
 #realizar deposito
     #Depositos a terceros
-    #Depositos a cuentas propias
+    #Depositos a la cuenta logueada
 
 #Manejo de Excepciones
 #try - except 
