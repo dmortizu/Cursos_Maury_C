@@ -12,6 +12,8 @@
     #Realizar transacciones a terceros
     #Realizar transacciones a cuentas propias
 #realizar Retiros
+    #monetaria <= 5000
+    #ahorro <= 2500
 #realizar deposito
     #Depositos a terceros
     #Depositos a cuentas propias
@@ -90,7 +92,7 @@ while (True):
 
                 while(True):
                     try:
-                        saldo_inicial = float(input(f"\n{nombre_cliente} por favor, ingrese su saldo inicial"))
+                        saldo_inicial = float(input(f"\n{nombre_cliente} por favor, ingrese su saldo inicial: "))
                     except:
                         print(f"\nEl Saldo debé ser un número")
                         continue
@@ -149,6 +151,7 @@ while (True):
 
             nombre = cuentas[num_cuenta]["nombre"]
             saldo_inicial = cuentas[num_cuenta]["saldo"]
+            tipo_cuenta = cuentas[num_cuenta]['tipo_cuenta']
 
             print(f"\nBienvenido {nombre}")
 
@@ -162,16 +165,61 @@ while (True):
                     continue
 
                 if (opcion_cajero == 1):
-                    pass
+                    print("\nCONSULTA DE SALDO")
+                    print(f"{nombre} su saldo actual es de: ${saldo_inicial}\n")
+
                 elif (opcion_cajero == 2):
                     pass
+
                 elif (opcion_cajero == 3):
-                    pass
+                    print("\nRETIRO DE DINERO")
+                    
+                    flag_retiro = True
+
+                    while(flag_retiro):
+                        try:
+                            monto_retiro = float(input(f"{nombre}, ingrese el monto a retirar: "))
+                        except:
+                            print(f"\nEl monto a retirar debé ser un número")
+                            continue
+
+                        if (tipo_cuenta == 1):
+                            if (monto_retiro <= 5000):
+                                if (monto_retiro <= saldo_inicial):
+                                    cuentas[num_cuenta]['saldo'] -= monto_retiro
+                                    saldo_inicial -= monto_retiro
+                                
+                                else:
+                                    print(f"\nNo dispone de saldo suficiente para realizar el retiro por: {monto_retiro}")
+
+                            else:
+                                print("\nEl tipo de cuenta Monetaria solo puede retirar un valor entre 1 y 5000 dólares")
+
+                        else:
+                            if (monto_retiro <= 2500):
+                                if (monto_retiro <= saldo_inicial):
+                                    cuentas[num_cuenta]['saldo'] -= monto_retiro
+                                    saldo_inicial -= monto_retiro
+
+                                else:
+                                    print(f"\nNo dispone de saldo suficiente para realizar el retiro por: {monto_retiro}")
+
+                            else:
+                                print("\nEl tipo de cuenta de Ahorro solo puede retirar un valor entre 1 y 2500 dólares")
+
+                        retiro_nuevo = input(f"\n{nombre} desea realizar otro retiro? [s/n]: ").lower()
+
+                        if (retiro_nuevo == 'n'):
+                            print()
+                            flag_retiro = False
+
                 elif (opcion_cajero == 4):
                     pass
+
                 elif (opcion_cajero == 5):
                     flag = False
                     break
+
                 else: 
                     print(f"\nLa opción: {opcion_cajero} no es valida, por favor ingresar una opción del [1-5]")
 
